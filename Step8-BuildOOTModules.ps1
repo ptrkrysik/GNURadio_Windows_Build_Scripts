@@ -317,6 +317,8 @@ function BuildOOTModules
 	if ($buildsymbols -and $buildconfig -eq "Release") {$buildconfig="RelWithDebInfo"}
 	if ($configuration -match "AVX2") {$arch="/arch:AVX2"} else {$arch=""}
 
+	if($false)
+	{
 	# ____________________________________________________________________________________________________________
 	#
 	# gr-acars2
@@ -1277,7 +1279,7 @@ function BuildOOTModules
 	$env:_LINK_ = ""
 	$ErrorActionPreference = "Stop"
 	Validate "$root/src-stage3/staged_install/$configuration/bin/gnuradio-lte.dll" "$root\src-stage3\staged_install\$configuration\lib\site-packages\lte\_lte_swig.pyd"
-
+	}
 	# ____________________________________________________________________________________________________________
 	#
 	# gr-gsm
@@ -1319,7 +1321,8 @@ function BuildOOTModules
 	$ErrorActionPreference = "Stop"
 	"complete"
 
-
+	if ($false) 
+	{
 	# ___________________________________STILL IN WORK____________________________________________________________
 	# ____________________________________________________________________________________________________________
 	# ____________________________________________________________________________________________________________
@@ -1389,8 +1392,7 @@ function BuildOOTModules
 	# There is hope for all of them though and they are at vary levels of maturity.
 	# Some will configure, some will build/install.  But none are currently working 100% so we'll exclude them from the .msi
 	# but keep this code here so tinkerers have a place to start.
-	if ($false) 
-	{
+
 
 		# ____________________________________________________________________________________________________________
 		#
