@@ -419,7 +419,7 @@ if (-not (test-path "${env:ProgramFiles(x86)}\Microsoft Visual Studio 14.0\VC"))
 if (-not (test-path $env:WIX)) {throw "WIX toolset must be installed.  Aborting script"}
 
 # doxygen
-if (-not (test-path "$env:ProgramFiles\doxygen")) {throw "Doxygen must be installed.  Aborting script"} 
+#if (-not (test-path "$env:ProgramFiles\doxygen")) {throw "Doxygen must be installed.  Aborting script"} 
 	
 # set VS 2015 environment
 if (!(Test-Path variable:global:oldpath))
