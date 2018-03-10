@@ -58,6 +58,8 @@ GetPackage git://git.osmocom.org/osmo-sdr -Stage3
 # upstream: https://github.com/osmocom/gr-iqbal.git 
 GetPackage http://www.gcndevelopment.com/gnuradio/downloads/sources/gr-iqbal.7z -Stage3
 
+if($false)
+{
 # ____________________________________________________________________________________________________________
 #
 # gr-benchmark
@@ -227,6 +229,7 @@ GetPackage https://github.com/gnieboer/gr-lte.git -Stage3 -branch "msvc_fixes"
 # OpenLTE
 #
 GetPackage https://downloads.sourceforge.net/project/openlte/openlte_v$openlte_version.tgz -Stage3
+}
 
 # ____________________________________________________________________________________________________________
 #
